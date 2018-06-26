@@ -1,0 +1,58 @@
+html
+  head
+    title RTL Subtitle Fixer
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css", integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB", crossorigin="anonymous")
+  body
+    .container.text-center
+      form.form
+        h1.h3.mb-3.font-weight-normal RTL Subtitle Fixer
+        label.sr-only(for='subtitleFile') Subtitle File
+        input#subtitleFile.form-control(type='file' placeholder='Subtitle File' required='' autofocus='')
+        .checkbox.mb-3
+          label
+            input(type='checkbox' value='multiline')
+            |  Multiline
+        button.btn.btn-lg.btn-primary.btn-block(type='submit') Make this Jewish!
+        p.mt-5.mb-3.text-muted &copy; Reuven Karasik 2018, for 
+          a(href="http://fb.com/spokenoar") Spokenoar
+
+
+    style.
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+      }
+
+      .form {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: auto;
+      }
+      .form .checkbox {
+        font-weight: 400;
+      }
+      .form .form-control {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .form .form-control:focus {
+        z-index: 2;
+      }
+      .form input[type="file"] {
+        margin-bottom: 15px;
+      }
+      
